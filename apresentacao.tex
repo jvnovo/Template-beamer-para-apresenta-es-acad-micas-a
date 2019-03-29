@@ -1,0 +1,86 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\mode<presentation>{
+\usetheme{Madrid}
+\useoutertheme{miniframes}
+\useinnertheme{circles}
+\setbeamercovered{transparent}
+\definecolor{charcoal}{rgb}{0.21, 0.27, 0.31}
+\usecolortheme[named=charcoal]{structure}
+}
+\usepackage[lf]{FiraSans} %melhorzinha, pois CMSans ninguém merece
+\usepackage{FiraMono}
+
+\mode<handout>{
+\beamertemplatesolidbackgroundcolor{black!5}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage[brazil]{varioref}
+\usepackage[english,brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\beamertemplatetransparentcovereddynamic
+
+\title[Título]{Título}
+\author[Author]{Autor}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+\usepackage{array}
+%\renewcommand{\arraystretch}{1.2} % se não usar o pacote array, que fornece o comando \extrarowheight 
+
+
+
+\begin{document}
+
+
+
+\bgroup
+\setbeamertemplate{navigation symbols}{} % retira navigation symbols
+
+
+\begin{frame}[plain]
+
+\centering 
+
+\tcbox[enhanced,size=small,halign=center,colback=charcoal,drop shadow,frame hidden,colupper=white]
+{\bfseries \huge Um título qualquer} 
+
+\bigskip
+
+\setlength{\extrarowheight}{6pt} %ajuste a seu gosto
+\begin{tabular}{cc}
+\textbf{Orientadores:}   & \textbf{Banca examinadora:}  \\
+Prof. Dr. Fulano¹     &  Professor Sicrano²\\
+Profª Fulana² & John Doe³\\
+\end{tabular}
+
+\bigskip\bigskip
+
+¹Coisa\\
+²Coisa\\
+³Coisa\\
+
+\vfill 
+
+\today. 
+
+\end{frame}
+\egroup 
+
+
+\begin{frame}{E voltamos}
+\begin{itemize}
+    \item asdf \item asdf \item asdf \item asdf
+\end{itemize}    
+\end{frame}
+
+\end{document}
